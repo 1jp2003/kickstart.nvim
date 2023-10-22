@@ -32,6 +32,7 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+<<<<<<< HEAD
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 
@@ -156,6 +157,10 @@ if not vim.loop.fs_stat(lazypath) then
   vim.fn.system { 'git', 'clone', '--filter=blob:none', '--branch=stable', lazyrepo, lazypath }
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
+=======
+-- Install lazy plugin manager
+require('lazy-bootstrap')
+>>>>>>> 5623cd0 (Added lua/lazy-bootstrap.lua)
 
 -- [[ Configure and install plugins ]]
 --
